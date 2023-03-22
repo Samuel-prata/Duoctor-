@@ -24,6 +24,9 @@ public class Categoria {
 	@NotBlank(message = "Esse campo é obrigatório")
 	private String tipo;
 	
+	@NotBlank(message = "Esse campo é obrigatório")
+	private String descricao;
+	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
 	private List<Produtos> produtos;
@@ -53,6 +56,14 @@ public class Categoria {
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	
 	
