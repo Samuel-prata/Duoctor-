@@ -36,9 +36,20 @@ public class Usuario {
 
 	private String foto;
 	
-	@OneToMany(mappedBy = "produto", cascade = CascadeType.REMOVE)
-	@JsonIgnoreProperties("Usuario")
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuario")
 	private List<Produtos> produtos;
+	
+	
+	//Getters and Setters
+
+	public List<Produtos> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(List<Produtos> produtos) {
+		this.produtos = produtos;
+	}
 
 	public long getId() {
 		return id;

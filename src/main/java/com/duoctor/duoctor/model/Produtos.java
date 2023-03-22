@@ -41,8 +41,26 @@ public class Produtos {
 	@JsonIgnoreProperties("Produtos")
 	private Usuario usuario;
 
+	//Getters and Setters
+	
 	public long getId() {
 		return id;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 	public void setId(long id) {

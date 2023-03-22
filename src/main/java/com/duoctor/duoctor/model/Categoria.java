@@ -24,9 +24,20 @@ public class Categoria {
 	@NotBlank(message = "Esse campo é obrigatório")
 	private String tipo;
 	
-	@OneToMany(mappedBy = "produtos", cascade = CascadeType.REMOVE)
+	@OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
 	private List<Produtos> produtos;
+
+	
+	// getters and setters
+	
+	public List<Produtos> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(List<Produtos> produtos) {
+		this.produtos = produtos;
+	}
 
 	public long getId() {
 		return id;
