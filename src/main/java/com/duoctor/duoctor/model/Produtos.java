@@ -23,11 +23,11 @@ public class Produtos {
 	@Size(min = 3, max = 155, message = "maximo 155 caracteres")
 	private String nome;
 
-	@NotBlank(message = "Esse campo é obrigatório")
-	private double preco;
+	
+	private Double preco;
 
-	@NotBlank(message = "Esse campo é obrigatório")
-	private int quantidade;
+	
+	private Integer quantidade;
 
 	@NotBlank(message = "Esse campo é obrigatório")
 	@Size(min = 10, max = 1000, message = "Minimo 10 caracteres e máximo de 1000 caracteres")
@@ -40,11 +40,46 @@ public class Produtos {
 	@ManyToOne
 	@JsonIgnoreProperties("Produtos")
 	private Usuario usuario;
-
-	//Getters and Setters
 	
+	//Getters and Setters
 	public long getId() {
 		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(Double preco) {
+		this.preco = preco;
+	}
+
+	public Integer getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public Categoria getCategoria() {
@@ -63,40 +98,6 @@ public class Produtos {
 		this.usuario = usuario;
 	}
 
-	public void setId(long id) {
-		this.id = id;
-	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public double getPreco() {
-		return preco;
-	}
-
-	public void setPreco(double preco) {
-		this.preco = preco;
-	}
-
-	public int getQuantidade() {
-		return quantidade;
-	}
-
-	public void setQuantidade(int quantidade) {
-		this.quantidade = quantidade;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-}
+	
+}	

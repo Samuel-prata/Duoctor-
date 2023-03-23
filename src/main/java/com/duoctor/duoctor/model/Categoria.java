@@ -33,15 +33,6 @@ public class Categoria {
 
 	
 	// getters and setters
-	
-	public List<Produtos> getProdutos() {
-		return produtos;
-	}
-
-	public void setProdutos(List<Produtos> produtos) {
-		this.produtos = produtos;
-	}
-
 	public long getId() {
 		return id;
 	}
@@ -65,6 +56,19 @@ public class Categoria {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+
+	public List<Produtos> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(List<Produtos> produtos) {
+		this.produtos = produtos;
+	}
+
+	
+	
+	
+	
 	
 	
 }
