@@ -34,11 +34,11 @@ public class Produtos {
 	private String descricao;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("Produtos")
+	@JsonIgnoreProperties("produtos")
 	private Categoria categoria;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("Produtos")
+	@JsonIgnoreProperties("produtos")
 	private Usuario usuario;
 	
 	//Getters and Setters
