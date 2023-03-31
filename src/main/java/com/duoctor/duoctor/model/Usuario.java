@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -26,7 +27,8 @@ public class Usuario {
 	@NotBlank(message = "Esse campo é obrigatório")
 	@Size(min = 3, max = 255, message = "maximo 255 caracteres")
 	private String nome;
-
+	
+	@Schema(example = "email@email.com.br")
 	@NotBlank(message = "Esse campo é obrigatório")
 	@Email(message = "O Atributo Usuário deve ser um email válido!")
 	@Size(min = 3, max = 155, message = "maximo 155 caracteres")
@@ -35,16 +37,27 @@ public class Usuario {
 	@NotBlank(message = "Esse campo é obrigatório")
 	@Size(min = 8, message = "Minimo de 8 e maximo de 45 caracteres")
 	private String senha;
-	
+
 	@Size(max = 5000, message = "O link da foto não pode ser maior do que 5000 caracteres")
 	private String foto;
-	
+
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Produtos> produtos;
-	
-	
-	//Getters and Setters
+
+	// Métodos construtores
+	public Usuario(Long id, String nome, String usuario, String senha, String foto) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.foto = foto;
+	}
+
+	public Usuario() {
+	}
+
+	// Getters and Setters
 
 	public List<Produtos> getProdutos() {
 		return produtos;
@@ -93,5 +106,5 @@ public class Usuario {
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
-	
+
 }
