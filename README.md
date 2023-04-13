@@ -12,6 +12,10 @@
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
+    
+<h4 align="center">
+Esse repositório é o desenvolvimento do Projeto Integrador do bootcamp Java Fullstack Jr da Generation Brasil
+</h4>
 
  O Duoctor é um projeto integrador com base na **ODS 3 (Objetivo de Desenvolvimento Sustentável número 3)** da [ONU](https://brasil.un.org/pt-br/sdgs), que tem como objetivo promover o acesso universal à saúde e o bem-estar das pessoas. O projeto tem como propósito interligar pessoas que desejam contribuir com doações para organizações e entidades de saúde, facilitando o processo de doação e tornando-o mais eficiente e seguro.
 
