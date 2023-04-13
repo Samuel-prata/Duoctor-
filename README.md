@@ -5,7 +5,7 @@
     </p>
 
   <p align="center">
-  # Duoctor
+  <h1>DUOCTOR</h1>
   <p align="center">
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
