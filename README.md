@@ -15,7 +15,7 @@
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
     
 <h4 align="center">
-Esse repositório é o desenvolvimento do Projeto Integrador do bootcamp Java Fullstack Jr organizado pela [Generation-Brasil](https://brazil.generation.org/)
+Esse repositório é o desenvolvimento do Projeto Integrador do bootcamp Java Fullstack Jr organizado pela  <a target="_blank" href="[https://github.com/wbeize/itau-gen"](https://brazil.generation.org/)>Generation Brasil</a>
 </h4>
 
  O Duoctor é um projeto integrador com base na **ODS 3 (Objetivo de Desenvolvimento Sustentável número 3)** da [ONU](https://brasil.un.org/pt-br/sdgs), que tem como objetivo promover o acesso universal à saúde e o bem-estar das pessoas. O projeto tem como propósito interligar pessoas que desejam contribuir com doações para organizações e entidades de saúde, facilitando o processo de doação e tornando-o mais eficiente e seguro.
