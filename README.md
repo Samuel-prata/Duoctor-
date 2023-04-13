@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="https://github.com/wbeize">
-        <img alt="Badge Status" src="https://img.shields.io/badge/status%20-projeto%20concluído (backend)-1abc9c.svg" />
+    <a href="https://github.com/samuel-prata">
+        <img alt="Badge Status" src="https://img.shields.io/badge/status%20-Concluído (backend)-1abc9c.svg" />
     </a>
     </p>
 
