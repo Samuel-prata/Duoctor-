@@ -27,7 +27,7 @@ public class Usuario {
 	@NotBlank(message = "Esse campo é obrigatório")
 	@Size(min = 3, max = 255, message = "maximo 255 caracteres")
 	private String nome;
-	
+
 	@Schema(example = "email@email.com.br")
 	@NotBlank(message = "Esse campo é obrigatório")
 	@Email(message = "O Atributo Usuário deve ser um email válido!")
@@ -40,7 +40,7 @@ public class Usuario {
 
 	@Size(max = 5000, message = "O link da foto não pode ser maior do que 5000 caracteres")
 	private String foto;
-	
+
 	@NotBlank
 	private String tipo;
 
@@ -59,11 +59,11 @@ public class Usuario {
 	}
 
 	public Usuario() {
+
 	}
 
 	// Getters and Setters
 
-	
 	public List<Produtos> getProdutos() {
 		return produtos;
 	}
